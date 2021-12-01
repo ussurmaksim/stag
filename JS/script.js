@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function () {
     $('p.big a.nav-link').click(function() {
         $('p.big a.nav-link').each(function () {
