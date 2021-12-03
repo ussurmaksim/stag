@@ -321,6 +321,7 @@ img.photo{
     color: #fff;
     display: inline-flex;
     align-items: center;
+    margin-left: -15px;
 }
 .btn-card.btn p.big{
     margin-right: 16px;
