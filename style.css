@@ -573,6 +573,16 @@ input#telephon::placeholder {
 .start-block{
     margin-top: 135px;
 }
+@media screen and (max-width:419px) {
+    .width-little{
+        font-size: 25px;
+    }
+}
+/* @media screen and (max-width:320px) {
+    .width-little{
+        font-size: 25px;
+    }
+} */
 @media screen and (min-width:366px) and (max-width:1025px) {
     .comm-text1 p.big{
         margin-bottom: 378px;
@@ -601,6 +611,7 @@ input#telephon::placeholder {
     max-width: 443px;
     max-height: 300px;
     border-radius: 50px;
+    background-position: center !important;
 }
 .img-small{
     background-size: cover;
@@ -609,9 +620,10 @@ input#telephon::placeholder {
     max-width: 350px;
     max-height: 300px;
     border-radius: 50px;
+    background-position: center !important;
 }
 .img,.img-small{
-    margin: 15px ;
+    margin: 15px;
 }
 
 @media screen and (min-width:366px) and (max-width:1900px) {
@@ -626,21 +638,7 @@ input#telephon::placeholder {
         background-position: 20%;
     }
 }
-/* @media screen and (min-width:384px) and (max-width:749px) {
-    .img{
-        max-width: 270px;
-           
-    }
-    .img-small{
-        max-width: 195px;
-        
-    }
-    .img,.img-small{
-        margin: 9px ;
-        background-position: 20%;
-       
-    }
-} */
+
 @media screen and (min-width:355px) and (max-width:749px) {
     .img{
         max-width: 150px;
