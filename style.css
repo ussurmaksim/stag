@@ -593,57 +593,79 @@ input#telephon::placeholder {
         margin-top: 75px;
     }
 }
-.img-field{
-    overflow: hidden;
-    width: 443px;
+
+.img{
+    background-size: cover;
+    width: 100%;
     height: 300px;
+    max-width: 443px;
+    max-height: 300px;
     border-radius: 50px;
-    margin: 0px 15px;
-    object-fit: cover;
 }
-.img-field2{
-    overflow: hidden;
-    width: 350px;
-    height: 301px;
+.img-small{
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    max-width: 350px;
+    max-height: 300px;
     border-radius: 50px;
-    margin: 0px 15px;
 }
-.img-field2 img{
-    margin-left: -45px;
+.img,.img-small{
+    margin: 15px ;
 }
-@media screen and (min-width:366px) and (max-width:1220px) {
+
+@media screen and (min-width:366px) and (max-width:1900px) {
+    .img{
+        max-width: 314px;   
+    }
+    .img-small{
+        max-width: 230px;
+    }
+    .img,.img-small{
+        margin: 15px 10px;
+        background-position: 20%;
+    }
+}
+/* @media screen and (min-width:384px) and (max-width:749px) {
+    .img{
+        max-width: 270px;
+           
+    }
+    .img-small{
+        max-width: 195px;
+        
+    }
+    .img,.img-small{
+        margin: 9px ;
+        background-position: 20%;
+       
+    }
+} */
+@media screen and (min-width:355px) and (max-width:749px) {
+    .img{
+        max-width: 150px;
+        max-height: 110px;   
+    }
+    .img-small{
+        max-width: 100px;
+        max-height: 110px;
+    }
+    .img,.img-small{
+        margin: 9px ;
+        background-position: 20%;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:1335px) {
     .hide1{
         display: none;
         width: 0;
         height: 0;
         margin: 0;
-        padding: 0;
-    }
-    .img-field{
-        overflow: hidden;
-        width: 315px;
-        height: 300px;
-        border-radius: 50px;
-        margin: 0px 10px;
-    }
-    .img-field2{
-        overflow: hidden;
-        width: 213px;
-        height: 301px;
-        border-radius: 50px;
-        margin: 0px 15px;
-    }
-    .img-field2 img{
-        margin-left: -110px;
-    }
+        padding: 0;}
 }
-@media screen and (max-width:365px) {
-    .hide1{
-        display: none;
-        width: 0;
-        height: 0;
-        margin: 0;
-        padding: 0;    }
+@media screen and (max-width:1001px) {
     .hide2{
         display: none;
         width: 0;
@@ -651,29 +673,80 @@ input#telephon::placeholder {
         margin: 0;
         padding: 0;   
     }
-    .img-field{
-        overflow: hidden;
-        width: 150px;
+}
+@media screen and (max-width:354px) {
+    .hide3{
+        display: none;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .img{
+        width: 200px;
+        height: 110px;   
+        border-radius: 20px;
+    }
+    .img-small{
+        width: 120px;
         height: 110px;
         border-radius: 20px;
-        margin: 0px 9px;
     }
-    .img-field2{
-        overflow: hidden;
-        width: 100px;
-        height: 110px;
+    .img,.img-small{
+        margin: 9px ;
+        background-position: 20%;
         border-radius: 20px;
-        margin: 0px 5px;
     }
-    .img-field2 img{
-        margin-left: -10px;
-        width: 150px !important;
-        height: 110px !important;
-    }
-    .img-field img{
-        width: 150px !important;
-        height: 110px !important;
-    }
+}
+.img1{
+    background-image: url(images/travel-photo-1.jpg);
+}
+.img2{
+    background-image: url(images/travel\ photo-2.jpg);
+}
+.img3{
+    background-image: url(images/travel\ photo-3.jpg);
+}
+.img4{
+    background-image: url(images/travel\ photo-4.jpg);
+}
+.img5{
+    background-image: url(images/travel\ photo-5.jpg);
+}
+.img6{
+    background-image: url(images/travel\ photo-6.jpg);
+}
+.img7{
+    background-image: url(images/travel\ photo-7.jpg);
+}
+.img8{
+    background-image: url(images/travel\ photo-8.jpg);
+}
+.img9{
+    background-image: url(images/travel\ photo-13.jpg);
+}
+.img10{
+    background-image: url(images/travel\ photo-10.jpg);
+}
+.img11{
+    background-image: url(images/travel\ photo-11.jpg);
+}
+.img12{
+    background-image: url(images/travel\ photo-12.jpg);
+}
+.img13{
+    background-image: url(images/travel\ photo-9.jpg);
+}
+.nav .center{
+    display: inline-flex;
+}
+
+
+@media screen and (min-width:366px) and (max-width:1220px) {
+
+}
+@media screen and (max-width:365px) {
+
 }
 
 
