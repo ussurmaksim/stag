@@ -126,8 +126,6 @@ p.small{
     }
 }
 
-
-
 @media screen and (min-width:1200px) {
     #navbar{
         margin:0 181px;
@@ -145,11 +143,21 @@ p.small{
     }
 }
 
-
-.nav-mar{margin-right: 50px; padding: 30px 0 !important;}
-.nav-mar.last{margin-right: 0px; padding: 30px 0 !important;}
+.nav-mar{
+    margin-right: 50px; 
+    padding: 30px 0 !important;
+}
+.nav-mar.last{
+    margin-right: 0px; 
+    padding: 30px 0 !important;
+}
 .underline{color: #fff;}
-.underline:hover{border-bottom: 1px solid #fff; margin-bottom: -1px;}
+.underline:hover{ 
+    text-decoration: none; 
+    color: #fff; 
+    border-bottom: 1px solid #fff; 
+    margin-bottom: -1px;
+}
 
 .navbar-text{
     color: #fff !important;
@@ -594,11 +602,7 @@ input#telephon::placeholder {
         font-size: 25px;
     }
 }
-/* @media screen and (max-width:320px) {
-    .width-little{
-        font-size: 25px;
-    }
-} */
+
 @media screen and (min-width:366px) and (max-width:1025px) {
     .comm-text1 p.big{
         margin-bottom: 378px;
