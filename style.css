@@ -417,6 +417,8 @@ form.form{
     background-color: #F9F7F4;
     border: 1px solid #F4F0E9;
     font-size: 20px;
+    margin-bottom: 33px;
+
 }
 .form-control.marg1{
     margin-right: 15px;
@@ -749,9 +751,14 @@ input#telephon::placeholder {
     }
 }
 
-@media screen and (min-width:366px) and (max-width:1025px) {
+@media screen and (min-width:366px) and (max-width:1199px) {
     .comm-text1 p.big{
         margin-bottom: 378px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .comm-text1 p.big{
+        margin-bottom: 434px;
     }
 }
 @media screen and (min-width:768px) and (max-width:991px) {
