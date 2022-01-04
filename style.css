@@ -15,7 +15,9 @@ body{
         padding: 0;
     }
 }
-
+.btn:focus{
+    box-shadow: none;
+}
 
 
 /* typography */
@@ -551,7 +553,7 @@ input#telephon::placeholder {
 
   /* стили при наведении курсора на радио */
 .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
-    border-color: #b3d7ff;
+    border-color: #D9DFDB;
   }
   /* Курсор при наведении */
   .custom-radio>input+span:hover::before {
@@ -611,12 +613,12 @@ input#telephon::placeholder {
         height: 20px;
         background-size: 8px 8px;
     }
-    
 }
 
     /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled)+label:hover::before {
     cursor: pointer;
+    border-color: #D9DFDB;
 }
     /* стили для чекбокса, находящегося в состоянии checked */
 .custom-checkbox:checked+label::before {
