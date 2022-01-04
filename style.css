@@ -12,6 +12,7 @@ body{
 @media (min-width: 1500px){
     .container.standart {
         max-width: 1170px;
+        padding: 0;
     }
 }
 
@@ -117,7 +118,7 @@ p.small{
 /* navigation */
 @media screen and (max-width:991px) {
     .container.standart.marToH1{
-        padding-top: 33px;
+        padding-top: 22px;
     }
 }
 .navbar-brand{padding: 8px 0;}
@@ -238,9 +239,13 @@ a.nav-link{
     color: #000;
 }
 p.big a.nav-link{margin: 8px 15px}
-
-@media screen and (max-width:386px) {
-    p.big a.nav-link{margin:7px}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    p.big a.nav-link{
+        margin: 8px 11px
+    }
+}
+@media screen and (max-width: 386px) {
+    p.big a.nav-link{margin: 7px}
 }
 
 p.big a.nav-link.active{
@@ -408,10 +413,19 @@ form.form{
 .form-control{
     height: 68px;
     border-radius: 10px;
+    max-width: 500px;
     background-color: #F9F7F4;
     border: 1px solid #F4F0E9;
     font-size: 20px;
-    margin-bottom: 33px;
+}
+.form-control.marg1{
+    margin-right: 15px;
+}
+.form-control.marg2{
+    margin-left: 15px;
+}
+p.normal.marg2{
+    margin-left: 15px;
 }
 input#name::placeholder {
     color: #A6A6A6 !important;
@@ -440,8 +454,28 @@ input#telephon::placeholder {
 #comm{
     height: 152px;
     width: 100%;
+    max-width: 1030px;
     resize: none;
 } 
+
+@media screen and (max-width:1199px) {
+    .form-control{
+        max-width: 389px;
+    } 
+}
+@media screen and (max-width:767px) {
+    .form-control.marg2{
+        margin-left: 0px;
+    }
+    p.normal.marg2{
+        margin-left: 0px;
+    }
+    .form-control{
+        margin-bottom: 30px;
+
+    }
+}
+
 @media screen and (max-width: 448px) {
     .form-field{
         padding: 20px;
@@ -458,7 +492,6 @@ input#telephon::placeholder {
         background-color: #F9F7F4;
         border: 1px solid #F4F0E9;
         font-size: 16px;
-        margin-bottom: 30px;
     }  
     #select.form-control{
         height: 43px;
@@ -511,6 +544,8 @@ input#telephon::placeholder {
     background-position: center ;
     background-size: 12px 12px;
   }
+
+
 
   /* стили при наведении курсора на радио */
 .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
@@ -572,7 +607,9 @@ input#telephon::placeholder {
     .custom-radio>span::before {
         width: 20px;
         height: 20px;
+        background-size: 8px 8px;
     }
+    
 }
 
     /* стили при наведении курсора на checkbox */
