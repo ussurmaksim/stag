@@ -464,8 +464,6 @@ input#name::placeholder {
 @media screen and (max-width:767px) {
     .y{
         margin-left: 0;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -481,6 +479,8 @@ input#telephon::placeholder {
 .data{
     color: #A6A6A6;  
     text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 }
 .data:invalid{
     color: #000;
