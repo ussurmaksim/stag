@@ -479,11 +479,13 @@ input#telephon::placeholder {
 .data{
     color: #A6A6A6;  
     text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
 }
 .data:invalid{
     color: #000;
+}
+input.data{
+    justify-content: center;
+    align-items: center;
 }
 .b{
     color: #000 !important;
