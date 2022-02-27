@@ -486,6 +486,7 @@ input#telephon::placeholder {
 input.data{
     display: flex;
     align-items: center;
+    justify-items: start;
 }
 .b{
     color: #000 !important;
