@@ -434,7 +434,7 @@ p.normal.marg2{
 input#name::placeholder {
     color: #A6A6A6 !important;
 }
- #select.form-control{
+#select.form-control{
     height: 68px;
     border-radius: 10px;
     background-color: #F9F7F4;
@@ -442,18 +442,51 @@ input#name::placeholder {
     font-size: 20px;
     margin-bottom: 33px;
 } 
-#select option{
-    color: #000;
+
+.n{color:#A6A6A6}
+
+.y{
+    color:black;
+    height: 68px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #F9F7F4;
+    border: 1px solid #F4F0E9;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 30px;
+    
 }
+
+@media screen and (max-width:767px) {
+    .y{
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#select.y:focus{border: none;}
+
 input#email::placeholder {
     color: #A6A6A6 !important;
 }
 input#telephon::placeholder {
     color: #A6A6A6 !important;
 }
-#dateTo,#dateFrome{
+
+.data{
+    color: #A6A6A6;  
     text-transform: uppercase;
-    color: #A6A6A6;
+}
+.data:invalid{
+    color: #000;
+}
+.b{
+    color: #000 !important;
 }
 #comm{
     height: 152px;
@@ -491,19 +524,23 @@ input#telephon::placeholder {
     }
 
     .form-control{
-        height: 43px;
+        height: 46px;
         border-radius: 10px;
         background-color: #F9F7F4;
         border: 1px solid #F4F0E9;
         font-size: 16px;
     }  
     #select.form-control{
-        height: 43px;
+        height: 46px;
         border-radius: 10px;
         background-color: #F9F7F4;
         border: 1px solid #F4F0E9;
         font-size: 16px;
         margin-bottom: 33px;
+    }
+    .y{
+        height: 46px;
+        font-size: 16px;
     } 
     #comm{
         height: 132px;
@@ -782,14 +819,21 @@ input#telephon::placeholder {
         padding: 20px;
     }
     .acc-photo{
-        right: 20px;
-        bottom: 15px;
+        right: 35px;
+        bottom: 20px;
     }
     .start-block{
         margin-top: 75px;
     }
 }
+@media screen  and (max-width:340px) {
+    .acc-photo{
+        width: 65px;
+        height: 65px;
+        right: 30px;
+    }
 
+}
 .img{
     background-size: cover;
     width: 100%;

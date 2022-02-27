@@ -149,14 +149,14 @@
                     <input type="text" class="form-control marg1" id="name" placeholder="Введите Ваше имя">
                 </div>
                 <div class="col-md-6 pl-0">
-                    <div class="form-group">
-                        <label for="select"><p class="normal marg2">Пример меню выбора</p></label>
-                        <select class="form-control marg2" id="select">
-                            <option id="start" selected disabled hidden><p class="normal">Куда хотите ехать</p></option>
-                            <option><p class="normal">1</p></option>
-                            <option><p class="normal">2</p></option>
-                            <option><p class="normal">3</p></option>
-                            <option><p class="normal">4</p></option>
+                    <div class="form-group mb-0">
+                        <label for="select"><p class="normal marg2">Направление</p></label>
+                        <select class="n form-control marg2" onchange="className=selectedIndex?'y':'n'" id="select">
+                            <option id="start" selected disabled hidden ><p class="normal">Куда хотите ехать</p></option>
+                            <option class="n"><p class="normal">1</p></option>
+                            <option class="n"><p class="normal">2</p></option>
+                            <option class="n"><p class="normal">3</p></option>
+                            <option class="n"><p class="normal">4</p></option>
                         </select>
                       </div>
                 </div>
@@ -173,12 +173,12 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-md-6 pl-0">
-                    <label for="email"><p class="normal">Дата от</p></label>
-                    <input type="date" class="form-control marg1" id="dateFrome">
+                    <label for="dateFrome"><p class="normal">Дата от</p></label>
+                    <input type="date" class="data form-control marg1" id="dateFrome" oninput="this.classList.add('b')">
                 </div>
                 <div class="col-md-6 pl-0">
-                    <label for="telephon"><p class="normal marg2">Дата до</p></label>
-                    <input type="date" class="form-control marg2" id="dateTo">                
+                    <label for="dateTo"><p class="normal marg2">Дата до</p></label>
+                    <input type="date" class="data form-control marg2" id="dateTo" oninput="this.classList.add('b')">                
                 </div>
             </div>
             <div class="row no-gutters">
@@ -227,7 +227,7 @@
         <p class="normal idea ">Идейные соображения высшего порядка,<br>а также рамки и место обучения кадров</p>
     </div>
     <div class="row">
-        <div class="col-md-6 pb-3">
+        <div class="col-md-6 mb-3">
             <div class="comm-field">
                 <div class="comm-text1">
                     <p class="big">
