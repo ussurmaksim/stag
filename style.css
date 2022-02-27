@@ -484,8 +484,10 @@ input#telephon::placeholder {
     color: #000;
 }
 input.data{
+    display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .b{
     color: #000 !important;
