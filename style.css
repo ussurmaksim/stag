@@ -437,10 +437,15 @@ input#name::placeholder {
 #select.form-control{
     height: 68px;
     border-radius: 10px;
-    background-color: #F9F7F4;
     border: 1px solid #F4F0E9;
     font-size: 20px;
     margin-bottom: 33px;
+    appearance: none;
+    overflow: hidden;
+    background: url('images/Rectangle\ 34\ \(Stroke\).svg') no-repeat;
+    background-position: 95.5% ;
+    background-size: 14px;
+    background-color: #F9F7F4;
 } 
 
 .n{color:#A6A6A6}
@@ -451,14 +456,18 @@ input#name::placeholder {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
-    background-color: #F9F7F4;
     border: 1px solid #F4F0E9;
     font-size: 20px;
     margin-left: 15px;
-    padding-left: 10px;
+    padding-left: 12px;
     outline: none;
     margin-bottom: 30px;
-    
+    appearance: none;
+    overflow: hidden;
+    background: url('images/Rectangle\ 34\ \(Stroke\).svg') no-repeat;
+    background-position: 95.5% ;
+    background-size: 14px;
+    background-color: #F9F7F4;
 }
 
 @media screen and (max-width:767px) {
