@@ -407,7 +407,7 @@ form.form{
 .form-control:focus{
     box-shadow: none;
     border: 1px solid #A6A6A6 !important;
-    background-color: #F4F0E9;
+    background-color: #F4F0E9 !important;
 }
 .form-control:hover{
     background-color: #F4F0E9 !important;
@@ -469,14 +469,21 @@ input#name::placeholder {
     background-size: 14px;
     background-color: #F9F7F4;
 }
-
+.y:focus,#select.form-control:focus{
+    box-shadow: none;
+    border: 1px solid #A6A6A6 !important;
+    background-color: #F4F0E9 !important;
+}
+.y:hover,#select.form-control:hover{
+    background-color: #F4F0E9 !important;
+}
 @media screen and (max-width:767px) {
     .y{
         margin-left: 0;
     }
 }
 
-#select.y:focus{border: none;}
+
 
 input#email::placeholder {
     color: #A6A6A6 !important;
